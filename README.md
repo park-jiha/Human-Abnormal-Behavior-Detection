@@ -26,11 +26,15 @@ https://github.com/WongKinYiu/ScaledYOLOv4
 - Object 좌표 값과 이상행동 유형, 이상행동 시작 프레임, 이상행동 종료 프레임 등을 학습하여 이상행동(낙상)에 따른 행동을 분류한다.
 - 여러 모델 개발을 시도하며 최적의 결과를 낼 수 있는 모델로 최종 선정한다.
 
-## Models
+## 개발 Specification
+- 환경 : python 3.9.12 / numpy 1.22.4 / pandas 1.4.2 / opencv gpu 4.5.5
+- Test 동영상 setting : 1920 x 1080, 15 fps
+- 동영상 데이터 처리 : opencv gpu
+- 사람 검출 (Human Detection) : yolov4 p6 config & weight 사용
+- 사람의 관절 keypoint 추출 : Google mediapipe 의 blazepose 사용
+- 낙상 여부 판단 : Bounding box 의 height & weight 변화 속도 계산
+- 낙상 방향 판단 : 총 3 가지 방향 전방 낙상 후방 낙상 측면 낙상 감지, Bounding box 의 height & weight 위치 및 변화 특징 구분
 
-### 1. WHENet(https://github.com/Ascend-Research/HeadPoseEstimation-WHENet)
-- RGB 이미지에서 오일러 각(Roll, Pitch, Yaw) 값을 계산
-- YOLO_v3 를 이용한 Face Detection
-- Problem : Version 문제(Tensorflow-gpu)
-
-<img src="https://user-images.githubusercontent.com/62232217/148342110-e2c43c5e-8cb7-4244-b8ca-b97141dce0df.gif"  width="400" height="300"/>
+## 참고 문헌
+[1] 김지민, 윤기범, 심정용, 박소영, 신연순. (2020) YOLOv3 알고리즘을 이용한 실시간 낙상 검출
+[2] 황세현, 반성범. (2016) 오픈 소스 하드웨어와 RGB 카메라를 이용한 낙상 검출시스템
