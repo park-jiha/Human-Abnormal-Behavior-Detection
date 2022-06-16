@@ -7,7 +7,7 @@
 ## YOLO cfg, weights
 https://github.com/WongKinYiu/ScaledYOLOv4
 
-## 주제 : 이상행동 분류 (낙상 검출)
+## 주제 : 이상행동 분류 (낙상 검출) with 싱스웰
 
 ## 구성원
 ### 1. 박지하 / 개발, 리더 / 데이터 수집 및 가공, 학습모델 개발
