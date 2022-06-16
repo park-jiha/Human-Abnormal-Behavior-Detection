@@ -4,6 +4,9 @@
 - 2022.6.10 ver. : 1차 데모 / model_demo(220610).py
 - 2022.6.13 ver. : 1차 데모 후 피드백 -> srt 파일 생성 부분 간소화 / demo_0613.py
 
+## YOLO cfg, weights
+https://github.com/WongKinYiu/ScaledYOLOv4
+
 ## 목적
 - 
 
