@@ -3,6 +3,8 @@
 ## Code Update
 - 2022.6.10 ver. : 1차 데모 / model_demo(220610).py
 - 2022.6.13 ver. : 1차 데모 후 피드백 -> srt 파일 생성 부분 간소화 / demo_0613.py
+- 2022.6.20 ver. : 코드 간소화, 낙상 후 이벤트 초기화 / main_0620.py
+- 2022.6.22 ver. : 첫 detection 안될 시 imshow 안되는 현상 수정 / main_0622.py
 
 ## YOLO cfg, weights
 https://github.com/WongKinYiu/ScaledYOLOv4
